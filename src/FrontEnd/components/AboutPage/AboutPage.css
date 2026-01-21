@@ -1,0 +1,376 @@
+/* AboutPage.css - Complete Styles for About Page */
+
+/* ===== BASE STYLES ===== */
+.ap-root {
+  min-height: 100vh;
+  background-color: #f9fafb;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+}
+
+/* ===== HEADER ===== */
+.ap-header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  z-index: 40;
+}
+
+.ap-header-container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+}
+
+.ap-header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.ap-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.ap-logo-icon {
+  font-size: 1.875rem;
+  color: #2563eb;
+}
+
+.ap-logo-text {
+  background: linear-gradient(to right, #9333ea, #2563eb);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Navigation */
+.ap-nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.ap-nav-link {
+  color: #374151;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  padding: 0.5rem 0;
+}
+
+.ap-nav-link:hover {
+  color: #9333ea;
+}
+
+/* ===== MAIN CONTENT ===== */
+.ap-content {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+/* Hero Section */
+.ap-hero-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #111827;
+}
+
+@media (min-width: 768px) {
+  .ap-hero-title {
+    font-size: 3rem;
+  }
+}
+
+.ap-hero-subtitle {
+  font-size: 1.25rem;
+  text-align: center;
+  color: #4b5563;
+  margin-bottom: 3rem;
+  max-width: 48rem;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+/* Story & Process Grid */
+.ap-grid {
+  display: grid;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+  .ap-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.ap-section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #111827;
+}
+
+.ap-section-text {
+  color: #374151;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.ap-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ap-list-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  color: #374151;
+  line-height: 1.6;
+}
+
+.ap-list-icon {
+  color: #10b981;
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 0.125rem;
+}
+
+/* Values Section */
+.ap-values {
+  background: linear-gradient(to right, #9333ea, #2563eb);
+  border-radius: 1rem;
+  padding: 2rem;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .ap-values {
+    padding: 3rem;
+  }
+}
+
+.ap-values-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .ap-values-title {
+    font-size: 1.875rem;
+  }
+}
+
+.ap-values-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .ap-values-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+
+.ap-value-card {
+  text-align: center;
+}
+
+.ap-value-icon {
+  font-size: 2.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.ap-value-name {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  font-size: 1.125rem;
+}
+
+.ap-value-description {
+  color: rgba(216, 180, 254, 0.95);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+/* CTA Button */
+.ap-cta {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.ap-cta-button {
+  display: inline-block;
+  background: linear-gradient(to right, #9333ea, #2563eb);
+  color: white;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.ap-cta-button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(147, 51, 234, 0.3);
+}
+
+.ap-cta-button:active {
+  transform: scale(0.98);
+}
+
+/* ===== FOOTER ===== */
+.ap-footer {
+  background-color: #111827;
+  color: white;
+  padding: 2rem 0;
+  margin-top: 4rem;
+}
+
+.ap-footer-container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
+.ap-footer-text {
+  color: #9ca3af;
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.ap-footer-text + .ap-footer-text {
+  margin-top: 0.5rem;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  .ap-header-container {
+    padding: 0.75rem 1rem;
+  }
+  
+  .ap-content {
+    padding: 2rem 1rem;
+  }
+  
+  .ap-hero-title {
+    font-size: 1.875rem;
+  }
+  
+  .ap-hero-subtitle {
+    font-size: 1.125rem;
+  }
+  
+  .ap-values {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .ap-hero-title {
+    font-size: 1.75rem;
+  }
+  
+  .ap-hero-subtitle {
+    font-size: 1rem;
+  }
+  
+  .ap-values-grid {
+    gap: 1rem;
+  }
+  
+  .ap-value-icon {
+    font-size: 2rem;
+  }
+  
+  .ap-cta-button {
+    padding: 0.875rem 1.5rem;
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ap-logo {
+    font-size: 1.25rem;
+  }
+  
+  .ap-logo-icon {
+    font-size: 1.5rem;
+  }
+  
+  .ap-nav {
+    gap: 0.75rem;
+  }
+  
+  .ap-nav-link {
+    font-size: 0.875rem;
+  }
+  
+  .ap-section-title {
+    font-size: 1.25rem;
+  }
+  
+  .ap-values-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Animation */
+@keyframes ap-fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.ap-grid > * {
+  animation: ap-fadeIn 0.6s ease-out forwards;
+}
+
+.ap-grid > *:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.ap-values-grid > * {
+  animation: ap-fadeIn 0.6s ease-out forwards;
+}
+
+.ap-values-grid > *:nth-child(1) {
+  animation-delay: 0.3s;
+}
+
+.ap-values-grid > *:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.ap-values-grid > *:nth-child(3) {
+  animation-delay: 0.5s;
+}

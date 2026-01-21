@@ -1,0 +1,234 @@
+/* LandingFooter.css - Footer Styles for AppleLink */
+
+.landing-footer {
+  background: #1d1d1f;
+  color: white;
+  padding: 4rem 0 2rem;
+  margin-top: auto;
+}
+
+.landing-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Footer Content Layout */
+.landing-footer-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+  margin-bottom: 3rem;
+}
+
+/* Logo Section */
+.landing-footer-logo h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.landing-footer-logo p {
+  color: #86868b;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Footer Links */
+.landing-footer-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.landing-footer-column h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: white;
+  letter-spacing: 0.5px;
+}
+
+.landing-footer-column a {
+  display: block;
+  color: #86868b;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+  text-decoration: none;
+  line-height: 1.6;
+}
+
+.landing-footer-column a:hover {
+  color: #0071e3;
+}
+
+/* Social Media Section */
+.footer-section {
+  margin-top: 3rem;
+  padding-top: 3rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.footer-section h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.footer-social-icons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.footer-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  text-decoration: none;
+}
+
+.footer-social-link:hover {
+  background: #0071e3;
+  transform: translateY(-3px);
+  border-color: #0071e3;
+  box-shadow: 0 8px 20px rgba(0, 113, 227, 0.3);
+}
+
+.footer-social-link svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Footer Bottom */
+.landing-footer-bottom {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.landing-footer-bottom p {
+  color: #86868b;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.landing-footer-social {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.landing-footer-social span {
+  color: #86868b;
+  font-size: 0.9rem;
+}
+
+.landing-footer-social a {
+  color: white;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.landing-footer-social a:hover {
+  color: #0071e3;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .landing-footer-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .landing-footer-links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .landing-footer {
+    padding: 3rem 0 1.5rem;
+  }
+  
+  .landing-container {
+    padding: 0 1.5rem;
+  }
+  
+  .footer-section {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+  
+  .landing-footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .landing-footer-links {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .landing-footer {
+    padding: 2.5rem 0 1rem;
+  }
+  
+  .landing-container {
+    padding: 0 1rem;
+  }
+  
+  .landing-footer-logo h2 {
+    font-size: 1.75rem;
+  }
+  
+  .landing-footer-social {
+    justify-content: center;
+  }
+  
+  .landing-footer-social a {
+    font-size: 0.85rem;
+  }
+}
+
+/* Animation for social icons */
+@keyframes socialIconFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.footer-social-link:hover {
+  animation: socialIconFloat 0.6s ease-in-out;
+}
